@@ -1,0 +1,48 @@
+// 宫格动效
+{
+  "animations": [
+    {
+      "bizName": "HotelGroup",
+      "abSwitch": true, //AB开关，true为开
+      "abExpId": "201109_co_other_jiaobiao",  //AB实验编号
+
+      //默认配置。默认配置和AB同时只能生效一个
+      "defaultConfig": {
+        "vid": "[60001410-*]", //版本号
+        "onLineTime": "2021-04-01 00:00:00,2021-05-01 11:00:00", //生效时间
+        "requestType": 1, //调用方式 1静态 2动态
+        "requestUrl": "", //调用链接，动态时需填写接口链接，静态配置不用写
+        "secondDelay": 2, //动效几秒后开始动
+        "loopCount": 3, //动几次。1、2、3次，或-1无数次
+        "imgUrl": "https://s.qunarzz.com/f_cms/2022/1648784241555_275102721.gif", // 静态图片链接
+        "jumpUrl": "" //跳转链接
+      },
+
+      // ab配置。AB配置的具体细节和默认配置其实差不多
+      "abConfig": {
+        "A": {
+          "vid": "[60001410-*]",
+          "onLineTime": "2021-09-22 00:00:00,2021-09-30 23:59:59",
+          "requestType": 1,
+          "requestUrl": "",
+          "secondDelay": 2,
+          "loopCount": -1,
+          "imgUrl": "",
+          "jumpUrl": ""
+        },
+        "B": {
+          ......
+        },
+        "C": {
+          ......
+        },
+        "D": {
+          ......
+        }
+      }
+    }
+  ]
+}
+
+
+

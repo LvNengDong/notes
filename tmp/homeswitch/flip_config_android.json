@@ -1,0 +1,3503 @@
+/*
+  宫格翻转：
+    根据不同的strategy（默认/AB/CD）执行不同的翻转方式。
+    为什么 "strategy": "default" 没有 vid？
+*/
+[
+  {
+    "vid": "60001300-*",
+    "strategy": "ab",
+    "data": [
+      // 每个宫格都包含默认配置和AB配置
+      {
+        "bizName": "Hotel",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        // 默认配置一个
+        "defaultConfig": {
+          "type": 0, //调用方式 0静态 1动态
+          "secondDelay": "5",
+          "secondContinue": "3",
+          // 配置列表
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",//跳转链接，静态翻转后活动落地页链接，没有可不填，默认原配置
+              "jumpType": "1",//链接调用方式，静态翻转后活动落地页链接调用方式，
+              "jumpParam": "",//调整双头？
+              "vidRange": "[60001227-*]",//版本控制
+              "onLineDateTime": ""//在线时间
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",//接口链接
+              "vidRange": "[60001227-*]",//ab配置列表
+              "onLineDateTime": ""//分桶编号,ABCD
+            }
+          ]
+        },
+        // AB配置一系列
+        "abtestConfigList": [
+          {
+            "bucketId": "A",  //AB配置需要额外配置bucketId属性
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "hotel/hotelSearch?channelId=1&fromforlog=758",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "https://touch.qunar.com/mis/U7zE7r?bd_source=zthd_811439",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Flight",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "2",
+          "secondContinue": "6",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/3ef2187ee3911e003b9370918f439d13.png",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "HotelInter",
+        "abswitch": "true",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 1,
+          "secondDelay": "2",
+          "secondContinue": "3",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "",
+              "jumpParam": "",
+              "vidRange": "",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/v2/isturn",
+              "vidRange": "[*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 1,
+            "flipType": 2,
+            "secondDelay": "2",
+            "secondContinue": "3",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/v2/isturn",
+                "vidRange": "[*]",
+                "onLineDateTime": "2019-07-26 00:00:00,2099-09-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 1,
+            "flipType": 1,
+            "secondDelay": "2",
+            "secondContinue": "3",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/v2/isturn",
+                "vidRange": "[*]",
+                "onLineDateTime": "2019-07-26 00:00:00,2099-09-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "flipType": 1,
+            "secondDelay": "2",
+            "secondContinue": "3",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/v2/isturn",
+                "vidRange": "[*]",
+                "onLineDateTime": "2019-07-26 00:00:00,2099-09-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "flipType": 1,
+            "secondDelay": "2",
+            "secondContinue": "3",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/v2/isturn",
+                "vidRange": "[*]",
+                "onLineDateTime": "2019-07-26 00:00:00,2099-09-16 23:59:59"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Hotel",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "5",
+          "secondContinue": "3",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "1",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/18069d3f1287cbfbd835ec9115ba0966.png",
+                "jumpUrl": "hotel/hotelSearch?channelId=1&fromforlog=758",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-17 00:00:00,2019-04-24 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/18069d3f1287cbfbd835ec9115ba0966.png",
+                "jumpUrl": "https://touch.qunar.com/mis/U7zE7r?bd_source=zthd_811439",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-17 00:00:00,2019-04-24 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Train",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": "2018-12-04 00:00:00,2018-12-10 23:59:59"
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "HotelGroup",
+        "abswitch": "true",
+        "abExpId": "201109_co_other_jiaobiao",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "1",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-17 00:00:00,2019-05-17 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://s.qunarzz.com/f_cms/2022/1648707106177_862712639.png",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2022-04-01 11:00:00,2022-05-01 11:00:00"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://s.qunarzz.com/f_cms/2022/1648707106177_862712639.png",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2021-04-01 11:00:00,2021-05-01 11:00:00"
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Vacation",
+        "abswitch": "true",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "2",
+          "secondContinue": "6",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/f93a9419caf3b95f540d04a2b5d94de7.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/950e01650318663f2589b79d03c4bfc6.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/18096d520d8b6e2955dcbf2281030d14.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "GongLue",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "VacationGroup",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Sight",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "RentCar",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Around",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "vid": "60001300-*",
+    "strategy": "cd",
+    "data": [
+      {
+        "bizName": "Hotel",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "5",
+          "secondContinue": "3",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "1",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "hotel/hotelSearch?channelId=1&fromforlog=758",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "https://touch.qunar.com/mis/U7zE7r?bd_source=zthd_811439",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Flight",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "2",
+          "secondContinue": "6",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1909/5b/ab54d461a8ad1502.png",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "HotelInter",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 1,
+          "secondDelay": "2",
+          "secondContinue": "3",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "",
+              "jumpParam": "",
+              "vidRange": "",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/isturn",
+              "vidRange": "[*]",
+              "onLineDateTime": "2019-07-26 00:00:00,2019-09-16 23:59:59"
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "hotel/hotelSearch?channelId=1&fromforlog=758",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "https://touch.qunar.com/mis/U7zE7r?bd_source=zthd_811439",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Hotel",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "5",
+          "secondContinue": "3",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "1",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/18069d3f1287cbfbd835ec9115ba0966.png",
+                "jumpUrl": "hotel/hotelSearch?channelId=1&fromforlog=758",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-17 00:00:00,2019-04-24 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/18069d3f1287cbfbd835ec9115ba0966.png",
+                "jumpUrl": "https://touch.qunar.com/mis/U7zE7r?bd_source=zthd_811439",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-17 00:00:00,2019-04-24 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Train",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": "2018-12-04 00:00:00,2018-12-10 23:59:59"
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Vacation",
+        "abswitch": "true",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "2",
+          "secondContinue": "6",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/f93a9419caf3b95f540d04a2b5d94de7.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-17 00:00:00,2019-05-17 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/950e01650318663f2589b79d03c4bfc6.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-17 00:00:00,2019-05-17 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/18096d520d8b6e2955dcbf2281030d14.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-17 00:00:00,2019-05-17 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Vacation",
+        "abswitch": "true",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "2",
+          "secondContinue": "6",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/f93a9419caf3b95f540d04a2b5d94de7.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/950e01650318663f2589b79d03c4bfc6.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/18096d520d8b6e2955dcbf2281030d14.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "GongLue",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "VacationGroup",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Sight",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "RentCar",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Around",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "strategy": "default",
+    "data": [
+      {
+        "bizName": "Hotel",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "5",
+          "secondContinue": "3",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "1",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "hotel/hotelSearch?channelId=1&fromforlog=758",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "https://touch.qunar.com/mis/U7zE7r?bd_source=zthd_811439",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Flight",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "2",
+          "secondContinue": "6",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1909/5b/ab54d461a8ad1502.png",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "",
+                "jumpUrl": "",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "HotelInter",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 1,
+          "secondDelay": "2",
+          "secondContinue": "3",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "",
+              "jumpParam": "",
+              "vidRange": "",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/isturn",
+              "vidRange": "[*]",
+              "onLineDateTime": "2019-07-26 00:00:00,2019-09-16 23:59:59"
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "hotel/hotelSearch?channelId=1&fromforlog=758",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "1",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/4e8bd87eae9aa0ec2281c08f63d4a6c5.png",
+                "jumpUrl": "https://touch.qunar.com/mis/U7zE7r?bd_source=zthd_811439",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-08 00:00:00,2019-04-16 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Hotel",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "5",
+          "secondContinue": "3",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "1",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ],
+          "dynamicConfigList": [
+            {
+              "bizUrl": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/18069d3f1287cbfbd835ec9115ba0966.png",
+                "jumpUrl": "hotel/hotelSearch?channelId=1&fromforlog=758",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-17 00:00:00,2019-04-24 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/image/18069d3f1287cbfbd835ec9115ba0966.png",
+                "jumpUrl": "https://touch.qunar.com/mis/U7zE7r?bd_source=zthd_811439",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": "2019-04-17 00:00:00,2019-04-24 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Train",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": "2018-12-04 00:00:00,2018-12-10 23:59:59"
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": "2018-12-11 00:00:00,2018-12-17 23:59:59"
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Vacation",
+        "abswitch": "true",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "2",
+          "secondContinue": "6",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/f93a9419caf3b95f540d04a2b5d94de7.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-17 00:00:00,2019-05-17 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/950e01650318663f2589b79d03c4bfc6.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-17 00:00:00,2019-05-17 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/18096d520d8b6e2955dcbf2281030d14.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-17 00:00:00,2019-05-17 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Vacation",
+        "abswitch": "true",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "2",
+          "secondContinue": "6",
+          "staticConfigList": [
+            {
+              "imgUrl": "",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/f93a9419caf3b95f540d04a2b5d94de7.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/950e01650318663f2589b79d03c4bfc6.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://picbed.qunarzz.com/18096d520d8b6e2955dcbf2281030d14.png",
+                "jumpUrl": "https://zt.dujia.qunar.com/zts/2019519/touch.php?in_track=home_vacation_abt&et=home_vacation_abt",
+                "jumpType": "2",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": "2019-05-18 00:00:00,2019-05-21 23:59:59"
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "2",
+            "secondContinue": "6",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "GongLue",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "VacationGroup",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Sight",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "RentCar",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "bizName": "Around",
+        "abswitch": "false",
+        "abExpId": "181012_co_other_mark",
+        "defaultConfig": {
+          "type": 0,
+          "secondDelay": "3",
+          "secondContinue": "8",
+          "staticConfigList": [
+            {
+              "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+              "jumpUrl": "",
+              "jumpType": "2",
+              "jumpParam": "",
+              "vidRange": "[60001227-*]",
+              "onLineDateTime": ""
+            }
+          ]
+        },
+        "abtestConfigList": [
+          {
+            "bucketId": "A",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "B",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "C",
+            "type": 0,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "staticConfigList": [
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/ee/f0b8073163661a02.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001227-60001236]",
+                "onLineDateTime": ""
+              },
+              {
+                "imgUrl": "https://img1.qunarzz.com/order/comp/1812/fe/48834f06b9156402.png",
+                "jumpUrl": "",
+                "jumpType": "1",
+                "jumpParam": "",
+                "vidRange": "[60001237-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          },
+          {
+            "bucketId": "D",
+            "type": 1,
+            "secondDelay": "3",
+            "secondContinue": "8",
+            "dynamicConfigList": [
+              {
+                "bizUrl": "",
+                "vidRange": "[60001227-*]",
+                "onLineDateTime": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

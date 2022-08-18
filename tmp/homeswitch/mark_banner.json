@@ -1,0 +1,1839 @@
+// 宫格角标
+[
+  {
+    "iosVid": "80011193-*",
+    "adrVid": "60001300-*",
+    "strategy": "ab",
+    "data": [
+      {
+        "bizName": "Hotel",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "酒店",
+        "onLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "Train",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "火车票",
+        "onLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelGroup",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "特价酒店",
+        "onLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelInter",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "海外酒店",
+        "onLineTime": "2019-02-14 00:00:00,2022-03-07 11:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2019-02-14 00:00:00,2022-03-07 11:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelInter",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "海外酒店",
+        "onLineTime": "2022-03-07 12:00:00,2099-12-31 23:59:59",
+        "type": "1",
+        "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/v2/markText",
+        "abSwitch": "false",
+        "abOnLineTime": "2019-02-14 00:00:00,2099-12-31 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-01 00:00:00,2022-02-07 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-01 00:00:00,2022-02-07 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-08 00:00:00,2022-02-15 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-08 00:00:00,2022-02-15 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-16 00:00:00,2022-02-28 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-16 00:00:00,2022-02-28 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Flight",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "机票",
+        "onLineTime": "2021-11-01 11:00:00,2021-11-15 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-11-01 11:00:00,2021-11-15 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "Bus",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "汽车·船票",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2022-07-01 11:00:00,2022-08-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-08-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "1元租",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "1元租",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "1元租",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2020-11-11 00:00:00,2020-11-11 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2020-11-11 00:00:00,2020-11-11 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "双11",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "双11",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "双11",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2020-11-12 00:00:00,2020-12-04 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2020-11-12 00:00:00,2020-12-04 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "租车节",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "租车节",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "租车节",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Vacation",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "旅游",
+        "onLineTime": "2021-07-01 00:00:00,2021-07-31 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-07-01 00:00:00,2021-07-31 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "VacationGroup",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "旅游团购",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "Outbound",
+        "markText": "国庆",
+        "bannerText": "",
+        "bizTitle": "出境游",
+        "onLineTime": "2018-09-07 00:00:00,2018-09-13 23:59:59"
+      },
+      {
+        "bizName": "Walk",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "自由行",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "Sight",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "景点门票",
+        "onLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Oneday",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "一日游",
+        "onLineTime": "2018-12-10 00:00:00,2018-12-16 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2018-12-10 00:00:00,2018-12-16 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Walk",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "周末游",
+        "onLineTime": "2021-10-17 11:00:00,2021-11-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-10-17 11:00:00,2021-11-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "GongLue",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "攻略·美食",
+        "onLineTime": ""
+      }
+    ]
+  },
+  {
+    "iosVid": "80011193-*",
+    "adrVid": "60001300-*",
+    "strategy": "cd",
+    "data": [
+      {
+        "bizName": "Hotel",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "酒店",
+        "onLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "Train",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "火车票",
+        "onLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelGroup",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "特价酒店",
+        "onLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelInter",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "海外酒店",
+        "onLineTime": "2019-02-14 00:00:00,2022-03-07 11:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2019-02-14 00:00:00,2022-03-07 11:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelInter",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "海外酒店",
+        "onLineTime": "2022-03-07 12:00:00,2099-12-31 23:59:59",
+        "type": "1",
+        "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/v2/markText",
+        "abSwitch": "false",
+        "abOnLineTime": "2019-02-14 00:00:00,2099-12-31 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-01 00:00:00,2022-02-07 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-01 00:00:00,2022-02-07 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-08 00:00:00,2022-02-15 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-08 00:00:00,2022-02-15 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-16 00:00:00,2022-02-28 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-16 00:00:00,2022-02-28 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Flight",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "机票",
+        "onLineTime": "2021-11-01 11:00:00,2021-11-15 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-11-01 11:00:00,2021-11-15 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "Bus",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "汽车·船票",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "Bus",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "汽车·船票",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2022-07-01 11:00:00,2022-08-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-08-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "1元租",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "1元租",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "1元租",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2020-11-11 00:00:00,2020-11-11 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2020-11-11 00:00:00,2020-11-11 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "双11",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "双11",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "双11",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2020-11-12 00:00:00,2020-12-04 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2020-11-12 00:00:00,2020-12-04 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "租车节",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "租车节",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "租车节",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Vacation",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "旅游",
+        "onLineTime": "2021-07-01 00:00:00,2021-07-31 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-07-01 00:00:00,2021-07-31 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "VacationGroup",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "旅游团购",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "Outbound",
+        "markText": "国庆",
+        "bannerText": "",
+        "bizTitle": "出境游",
+        "onLineTime": "2018-09-07 00:00:00,2018-09-13 23:59:59"
+      },
+      {
+        "bizName": "Walk",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "自由行",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "Sight",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "景点门票",
+        "onLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Oneday",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "一日游",
+        "onLineTime": "2018-12-10 00:00:00,2018-12-16 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2018-12-10 00:00:00,2018-12-16 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Walk",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "周末游",
+        "onLineTime": "2021-10-17 11:00:00,2021-11-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-10-17 11:00:00,2021-11-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "GongLue",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "攻略·美食",
+        "onLineTime": ""
+      }
+    ]
+  },
+  {
+    "strategy": "default",
+    "data": [
+      {
+        "bizName": "Hotel",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "酒店",
+        "onLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=1"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "Train",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "火车票",
+        "onLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://touch.train.qunar.com/api/activity/AppQunarIndexPromotion"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelGroup",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "特价酒店",
+        "onLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "type": "1",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "",
+            "type": "1",
+            "bizUrl": "http://huranus.corp.qunar.com/uranus/homeArticle?position=4"
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelInter",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "海外酒店",
+        "onLineTime": "2019-02-14 00:00:00,2022-03-07 11:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2019-02-14 00:00:00,2022-03-07 11:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "5折住",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "HotelInter",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "海外酒店",
+        "onLineTime": "2022-03-07 12:00:00,2099-12-31 23:59:59",
+        "type": "1",
+        "bizUrl": "http://ihs.corp.qunar.com/ihotel/appclient/firstscreen/v2/markText",
+        "abSwitch": "false",
+        "abOnLineTime": "2019-02-14 00:00:00,2099-12-31 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "赏樱",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-01 00:00:00,2022-02-07 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-01 00:00:00,2022-02-07 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "5折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-08 00:00:00,2022-02-15 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-08 00:00:00,2022-02-15 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "6折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Apart",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "民宿·客栈",
+        "onLineTime": "2022-02-16 00:00:00,2022-02-28 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-02-16 00:00:00,2022-02-28 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Flight",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "机票",
+        "onLineTime": "2021-11-01 11:00:00,2021-11-15 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-11-01 11:00:00,2021-11-15 11:00:0",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "双十一",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          }
+        }
+      },
+      {
+        "bizName": "Bus",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "汽车·船票",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "Bus",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "汽车·船票",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2022-07-01 11:00:00,2022-08-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-07-01 11:00:00,2022-08-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "1元租",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "1元租",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "1元租",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2020-11-11 00:00:00,2020-11-11 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2020-11-11 00:00:00,2020-11-11 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "双11",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "双11",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "双11",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "RentCar",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "专车·租车",
+        "onLineTime": "2020-11-12 00:00:00,2020-12-04 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2020-11-12 00:00:00,2020-12-04 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "租车节",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "租车节",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "租车节",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Vacation",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "旅游",
+        "onLineTime": "2021-07-01 00:00:00,2021-07-31 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-07-01 00:00:00,2021-07-31 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "暑期特惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "VacationGroup",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "旅游团购",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "Outbound",
+        "markText": "国庆",
+        "bannerText": "",
+        "bizTitle": "出境游",
+        "onLineTime": "2018-09-07 00:00:00,2018-09-13 23:59:59"
+      },
+      {
+        "bizName": "Walk",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "自由行",
+        "onLineTime": ""
+      },
+      {
+        "bizName": "Sight",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "景点门票",
+        "onLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2022-08-01 11:00:00,2022-09-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "3折起",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Oneday",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "一日游",
+        "onLineTime": "2018-12-10 00:00:00,2018-12-16 23:59:59",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2018-12-10 00:00:00,2018-12-16 23:59:59",
+        "abConf": {
+          "bucket_A": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "热卖",
+            "bannerText": "",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "Walk",
+        "markText": "",
+        "bannerText": "",
+        "bizTitle": "周末游",
+        "onLineTime": "2021-10-17 11:00:00,2021-11-01 11:00:00",
+        "type": "0",
+        "bizUrl": "",
+        "abSwitch": "true",
+        "abOnLineTime": "2021-10-17 11:00:00,2021-11-01 11:00:00",
+        "abConf": {
+          "bucket_A": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_B": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_C": {
+            "markText": "",
+            "bannerText": "限时惠",
+            "type": "0",
+            "bizUrl": ""
+          },
+          "bucket_D": {
+            "markText": "",
+            "bannerText": ""
+          }
+        }
+      },
+      {
+        "bizName": "GongLue",
+        "markText": "大促",
+        "bannerText": "暑假大促",
+        "bizTitle": "攻略·美食",
+        "onLineTime": ""
+      }
+    ]
+  }
+]
