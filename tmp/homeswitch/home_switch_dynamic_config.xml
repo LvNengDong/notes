@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    宫格个性化配置
+    宫格版控配置
+    bizConfigList -> bizConfig ->mappingList
+
+    >> 个性化配置登录后才生效，我们如何判断用户是否登录？
+    自己判断还是从某个接口中读状态？
+
+    >> 在宫格配置中只调用一次个性化请求接口，业务线返回的code值是当前宫格的还是
+    整个12个宫格全部的。
+
+    >> 对于单个宫格来说，一次性返回一个 code 还是多个 code？当前的配置文件返回了多个code
+
 -->
 <dynamicConfig>
     <bizConfigList>

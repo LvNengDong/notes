@@ -1,7 +1,21 @@
 <homeSwitchStrategy>
-    <!-- TODO
-        1、strategy 的含义？
-        2、配置文件名 xx_a.xml？
+    <!--
+        Wiki： https://wiki.corp.qunar.com/confluence/pages/viewpage.action?pageId=599624148
+
+        >>最外层分为 strategy 和 homeSwitchList
+            1、strategy 的含义？
+            2、配置文件名 xx_a.xml？
+
+        >>每个宫格都由基础配置和版控配置两部分，基础配置是必须的，那么版控配置是
+        可选的还是最少有一个？
+        因为版控配置中有一些基础配置中不具备的属性（pid、cid、vid）
+
+        >> 版控配置与基础配置中的属性是否允许冲突？如果不允许，当发生冲突后应该以
+        哪一个为准？比如 defaultConfig#url 和 personalConfig#url
+
+        >> bizGroup、requestType、 requestUrl 这三个属性是不是去请求个性化配置的接口？
+            这个接口是不是只需要调用一次，因为在当前配置文件中12个宫格只配置了一次。
+            配好这三个属性后才可以去配置个性化配置文件，根据接口返回的 mappingtype 进行处理
     -->
     <strategy>a</strategy>
     <homeSwitchList>
@@ -11,6 +25,7 @@
             <defaultConfig>
                 <bizName>Hotel</bizName>
                 <icon>https://img1.qunarzz.com/order/comp/1908/d5/272bcc1939fa6102.png</icon>
+                <!--type和url共同确定唯一的url-->
                 <type>2</type>
                 <url><![CDATA[hotel/hotelSearch?channelId=1&homeCityUrl=#start#manCityCode#end#&homeCity=#start#manCity#end#&t1=#start#manCityTTM#end#]]></url>
                 <msg/>
@@ -95,7 +110,6 @@
                     <url></url>
                     <msg/>
                     <title>海外酒店</title>
-
                 </personalConfig>
             </personalConfigList>
         </homeSwitch>
